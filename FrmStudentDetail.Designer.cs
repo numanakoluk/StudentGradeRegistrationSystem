@@ -111,7 +111,7 @@ namespace StudentGradeRegistrationSystem
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(19, 33);
+            this.label8.Location = new System.Drawing.Point(39, 33);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(155, 24);
             this.label8.TabIndex = 7;
@@ -192,7 +192,7 @@ namespace StudentGradeRegistrationSystem
             this.Controls.Add(this.LblNameSurname);
             this.Controls.Add(this.LblExam1);
             this.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmStudentDetail";
             this.Text = "STUDENT GRADE REGISTRATION SYSTEM";
             this.Load += new System.EventHandler(this.FrmStudentDetail_Load);
