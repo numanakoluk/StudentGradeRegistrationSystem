@@ -1,7 +1,7 @@
 ﻿
 namespace StudentGradeRegistrationSystem
 {
-    partial class Form1
+    partial class FrmLogın
     {
         /// <summary>
         /// Required designer variable.
@@ -60,8 +60,9 @@ namespace StudentGradeRegistrationSystem
             this.button1.TabIndex = 2;
             this.button1.Text = "LOGIN";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form1
+            // FrmLogın
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -71,8 +72,8 @@ namespace StudentGradeRegistrationSystem
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "FrmLogın";
             this.Text = "Student Grade Registration System";
             this.ResumeLayout(false);
             this.PerformLayout();

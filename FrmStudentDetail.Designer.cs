@@ -195,6 +195,7 @@ namespace StudentGradeRegistrationSystem
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmStudentDetail";
             this.Text = "STUDENT GRADE REGISTRATION SYSTEM";
+            this.Load += new System.EventHandler(this.FrmStudentDetail_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

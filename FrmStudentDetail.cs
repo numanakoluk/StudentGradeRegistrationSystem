@@ -16,5 +16,12 @@ namespace StudentGradeRegistrationSystem
         {
             InitializeComponent();
         }
+        public string no;
+
+        private void FrmStudentDetail_Load(object sender, EventArgs e)
+        {
+            LblNo.Text = no;
+
+        }
     }
 }

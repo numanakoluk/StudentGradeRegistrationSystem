@@ -10,11 +10,20 @@ using System.Windows.Forms;
 
 namespace StudentGradeRegistrationSystem
 {
-    public partial class Form1 : Form
+    public partial class FrmLogın : Form
     {
-        public Form1()
+        public FrmLogın()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmStudentDetail frm = new FrmStudentDetail();
+            frm.no = maskedTextBox1.Text;
+            frm.Show();
+            
+
         }
     }
 }
