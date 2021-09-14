@@ -32,33 +32,25 @@ namespace StudentGradeRegistrationSystem
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TxtSurname = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.TxtName = new System.Windows.Forms.TextBox();
+            this.MskNo = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.TxtExam3 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.TxtExam2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.TxtExam1 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.LblAvarage = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dbNoteRecordDataSet = new StudentGradeRegistrationSystem.DbNoteRecordDataSet();
-            this.tBLLESSONBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tBLLESSONTableAdapter = new StudentGradeRegistrationSystem.DbNoteRecordDataSetTableAdapters.TBLLESSONTableAdapter();
             this.studentIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sTUDENTNODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sTUDENTNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,23 +60,26 @@ namespace StudentGradeRegistrationSystem
             this.sTUDENTEX3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.aVARAGEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sTATUSDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.tBLLESSONBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dbNoteRecordDataSet = new StudentGradeRegistrationSystem.DbNoteRecordDataSet();
+            this.tBLLESSONTableAdapter = new StudentGradeRegistrationSystem.DbNoteRecordDataSetTableAdapters.TBLLESSONTableAdapter();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbNoteRecordDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tBLLESSONBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbNoteRecordDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.TxtSurname);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.maskedTextBox1);
+            this.groupBox1.Controls.Add(this.TxtName);
+            this.groupBox1.Controls.Add(this.MskNo);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
@@ -101,13 +96,14 @@ namespace StudentGradeRegistrationSystem
             this.button1.TabIndex = 6;
             this.button1.Text = "STUDENT SAVE";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox2
+            // TxtSurname
             // 
-            this.textBox2.Location = new System.Drawing.Point(113, 173);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(132, 30);
-            this.textBox2.TabIndex = 5;
+            this.TxtSurname.Location = new System.Drawing.Point(113, 173);
+            this.TxtSurname.Name = "TxtSurname";
+            this.TxtSurname.Size = new System.Drawing.Size(132, 30);
+            this.TxtSurname.TabIndex = 5;
             // 
             // label3
             // 
@@ -127,21 +123,21 @@ namespace StudentGradeRegistrationSystem
             this.label2.TabIndex = 3;
             this.label2.Text = "NAME:";
             // 
-            // textBox1
+            // TxtName
             // 
-            this.textBox1.Location = new System.Drawing.Point(113, 121);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(132, 30);
-            this.textBox1.TabIndex = 2;
+            this.TxtName.Location = new System.Drawing.Point(113, 121);
+            this.TxtName.Name = "TxtName";
+            this.TxtName.Size = new System.Drawing.Size(132, 30);
+            this.TxtName.TabIndex = 2;
             // 
-            // maskedTextBox1
+            // MskNo
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(113, 74);
-            this.maskedTextBox1.Mask = "0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(132, 30);
-            this.maskedTextBox1.TabIndex = 1;
-            this.maskedTextBox1.ValidatingType = typeof(int);
+            this.MskNo.Location = new System.Drawing.Point(113, 74);
+            this.MskNo.Mask = "0000";
+            this.MskNo.Name = "MskNo";
+            this.MskNo.Size = new System.Drawing.Size(132, 30);
+            this.MskNo.TabIndex = 1;
+            this.MskNo.ValidatingType = typeof(int);
             // 
             // label1
             // 
@@ -154,12 +150,12 @@ namespace StudentGradeRegistrationSystem
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.TxtExam3);
             this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.TxtExam2);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.TxtExam1);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Location = new System.Drawing.Point(322, 12);
             this.groupBox2.Name = "groupBox2";
@@ -168,12 +164,12 @@ namespace StudentGradeRegistrationSystem
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Student Notes";
             // 
-            // textBox5
+            // TxtExam3
             // 
-            this.textBox5.Location = new System.Drawing.Point(113, 167);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(132, 30);
-            this.textBox5.TabIndex = 7;
+            this.TxtExam3.Location = new System.Drawing.Point(113, 167);
+            this.TxtExam3.Name = "TxtExam3";
+            this.TxtExam3.Size = new System.Drawing.Size(132, 30);
+            this.TxtExam3.TabIndex = 7;
             // 
             // button2
             // 
@@ -183,13 +179,14 @@ namespace StudentGradeRegistrationSystem
             this.button2.TabIndex = 6;
             this.button2.Text = "UPDATE";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // textBox3
+            // TxtExam2
             // 
-            this.textBox3.Location = new System.Drawing.Point(113, 117);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(132, 30);
-            this.textBox3.TabIndex = 5;
+            this.TxtExam2.Location = new System.Drawing.Point(113, 117);
+            this.TxtExam2.Name = "TxtExam2";
+            this.TxtExam2.Size = new System.Drawing.Size(132, 30);
+            this.TxtExam2.TabIndex = 5;
             // 
             // label4
             // 
@@ -209,12 +206,12 @@ namespace StudentGradeRegistrationSystem
             this.label5.TabIndex = 3;
             this.label5.Text = "EXAM 2:";
             // 
-            // textBox4
+            // TxtExam1
             // 
-            this.textBox4.Location = new System.Drawing.Point(113, 72);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(132, 30);
-            this.textBox4.TabIndex = 2;
+            this.TxtExam1.Location = new System.Drawing.Point(113, 72);
+            this.TxtExam1.Name = "TxtExam1";
+            this.TxtExam1.Size = new System.Drawing.Size(132, 30);
+            this.TxtExam1.TabIndex = 2;
             // 
             // label6
             // 
@@ -227,12 +224,7 @@ namespace StudentGradeRegistrationSystem
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.label12);
-            this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Controls.Add(this.button3);
-            this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Controls.Add(this.label8);
+            this.groupBox3.Controls.Add(this.LblAvarage);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Location = new System.Drawing.Point(614, 12);
             this.groupBox3.Name = "groupBox3";
@@ -241,59 +233,14 @@ namespace StudentGradeRegistrationSystem
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Student Notes";
             // 
-            // label12
+            // LblAvarage
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(135, 167);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(34, 24);
-            this.label12.TabIndex = 9;
-            this.label12.Text = "00";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(137, 120);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(34, 24);
-            this.label11.TabIndex = 8;
-            this.label11.Text = "00";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(137, 75);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(34, 24);
-            this.label10.TabIndex = 7;
-            this.label10.Text = "00";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(57, 222);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(154, 33);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "UPDATE";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(16, 167);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(92, 24);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "LOSERS:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(-3, 123);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(112, 24);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "WINNERS:";
+            this.LblAvarage.AutoSize = true;
+            this.LblAvarage.Location = new System.Drawing.Point(137, 75);
+            this.LblAvarage.Name = "LblAvarage";
+            this.LblAvarage.Size = new System.Drawing.Size(34, 24);
+            this.LblAvarage.TabIndex = 7;
+            this.LblAvarage.Text = "00";
             // 
             // label9
             // 
@@ -337,20 +284,7 @@ namespace StudentGradeRegistrationSystem
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1112, 231);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // dbNoteRecordDataSet
-            // 
-            this.dbNoteRecordDataSet.DataSetName = "DbNoteRecordDataSet";
-            this.dbNoteRecordDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tBLLESSONBindingSource
-            // 
-            this.tBLLESSONBindingSource.DataMember = "TBLLESSON";
-            this.tBLLESSONBindingSource.DataSource = this.dbNoteRecordDataSet;
-            // 
-            // tBLLESSONTableAdapter
-            // 
-            this.tBLLESSONTableAdapter.ClearBeforeFill = true;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // studentIDDataGridViewTextBoxColumn
             // 
@@ -416,12 +350,26 @@ namespace StudentGradeRegistrationSystem
             this.sTATUSDataGridViewCheckBoxColumn.MinimumWidth = 6;
             this.sTATUSDataGridViewCheckBoxColumn.Name = "sTATUSDataGridViewCheckBoxColumn";
             // 
+            // tBLLESSONBindingSource
+            // 
+            this.tBLLESSONBindingSource.DataMember = "TBLLESSON";
+            this.tBLLESSONBindingSource.DataSource = this.dbNoteRecordDataSet;
+            // 
+            // dbNoteRecordDataSet
+            // 
+            this.dbNoteRecordDataSet.DataSetName = "DbNoteRecordDataSet";
+            this.dbNoteRecordDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tBLLESSONTableAdapter
+            // 
+            this.tBLLESSONTableAdapter.ClearBeforeFill = true;
+            // 
             // FrmTeacherDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
-            this.ClientSize = new System.Drawing.Size(1130, 568);
+            this.ClientSize = new System.Drawing.Size(1127, 568);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -439,8 +387,8 @@ namespace StudentGradeRegistrationSystem
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbNoteRecordDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tBLLESSONBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbNoteRecordDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -449,27 +397,22 @@ namespace StudentGradeRegistrationSystem
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TxtSurname;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.TextBox TxtName;
+        private System.Windows.Forms.MaskedTextBox MskNo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox TxtExam3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox TxtExam2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox TxtExam1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label LblAvarage;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dataGridView1;
