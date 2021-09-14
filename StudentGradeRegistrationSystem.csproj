@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DbNoteRecordDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbNoteRecordDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogın.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +89,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="DbNoteRecordDataSet.xsc">
+      <DependentUpon>DbNoteRecordDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DbNoteRecordDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DbNoteRecordDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DbNoteRecordDataSet.xss">
+      <DependentUpon>DbNoteRecordDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

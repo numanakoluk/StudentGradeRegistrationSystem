@@ -25,5 +25,16 @@ namespace StudentGradeRegistrationSystem
             
 
         }
+
+      
+
+        private void maskedTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (maskedTextBox1.Text == "1111")
+            {
+                FrmTeacherDetail fr = new FrmTeacherDetail();
+                fr.Show();
+            }
+        }
     }
 }
